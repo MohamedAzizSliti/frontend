@@ -1,0 +1,109 @@
+/* Hide the sidebar on small screens */
+@media (max-width: 639px) {
+    .sm\:fixed {
+      display: none;
+    }
+  }
+  
+  /* Set a max-width to prevent the sidebar from taking up the entire screen */
+  @media (min-width: 640px) {
+    .lg\:max-w-6xl {
+      max-width: 1920px;
+    }
+  }
+  
+  /* Reduce the size of the logo on small screens */
+  @media (max-width: 767px) {
+    .sm\:logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  /* Set the width of the sidebar based on the screen size */
+  @media (min-width: 640px) {
+    .lg\:w-72 {
+      width: 18rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .lg\:w-72 {
+      width: 20rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .lg\:w-72 {
+      width: 22rem;
+    }
+  }
+  
+  /* Reduce the padding on the sidebar on small screens */
+  @media (max-width: 767px) {
+    .sm\:p-5 {
+      padding: 1rem;
+    }
+    .sm\:pt-8 {
+      padding-top: 2rem;
+    }
+  }
+  
+  /* Reduce the font size of the menu items on small screens */
+  @media (max-width: 767px) {
+    .text-sm {
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Increase the spacing between menu items on small screens */
+  @media (max-width: 767px) {
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+    .mt-12 {
+      margin-top: 3rem;
+    }
+  }
+  
+  /* Reduce the size of the icons on small screens */
+  @media (max-width: 767px) {
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Hide the menu item titles on small screens */
+  @media (max-width: 767px) {
+    .hidden {
+      display: none;
+    }
+  }
+  /* Arrow icon styles */
+.arrow-icon {
+  position: absolute;
+  top: 16px;
+  right: -3px;
+  border: 1px solid #ffa500;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-icon svg {
+  font-size: 24px;
+}
+
+/* Show arrow icon for screens smaller than 640px */
+@media screen and (max-width: 640px) {
+  .arrow-icon {
+    display: flex;
+  }
+}
+
+  
